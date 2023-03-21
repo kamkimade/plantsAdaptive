@@ -1,0 +1,110 @@
+/* Global parameters */
+
+:root {
+  --primaryColor: #066F14;
+  --primaryColor-Light: #359b43;
+  --primaryColor-ExLight: #DFFFE3;
+  --fontColor-Dark: #1A1A1A;
+  --fontColor-Gray: #5A5A5A; 
+  --fontColor-White: #ECECEC;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.link {
+  display: block;
+  line-height: 21px;
+  color: var(--fontColor-Dark);
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primaryColor);
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.link:hover::after {
+  opacity: 1;
+}
+
+.btn {
+  background: var(--primaryColor);
+  border-radius: 4px;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--primaryColor-Light);
+}
+
+/* fonts config */
+.title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--fontColor-Dark);
+}
+
+.title-fsz-big {
+  font-size: 72px;
+  line-height: 92px;
+}
+
+.title-fsz-small {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.title-fsz-medium {
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 33px;
+}
+
+
+
+/* HEADER */
+.header__inner {
+  padding-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__login {
+  margin-right: 48px;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 48px;
+}
+
+.header__btn {
+  padding: 12px 16px;
+}
