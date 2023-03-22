@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,33 +15,34 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/media.css">
 </head>
+
 <body>
   <header class="header">
     <div class="header__inner flex container">
-      <a href="#" class="logo title">Plant</a>
+      <a href="#" class="accent-font fw700 fsz24-lh33">Plant</a>
       <nav class="nav">
         <ul class="nav__list flex">
           <li class="nav__item">
-            <a href="#" class="nav__link link">Home</a>
+            <a href="#" class="nav__link link lh21">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link link">Services</a>
+            <a href="#" class="nav__link link lh21">Services</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link link">About Us</a>
+            <a href="#" class="nav__link link lh21">About Us</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link link">Blog</a>
+            <a href="#" class="nav__link link lh21">Blog</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link link">Contact</a>
+            <a href="#" class="nav__link link lh21">Contact</a>
           </li>
         </ul>
       </nav>
       <div class="header__right flex">
         <div class="header__autorization flex">
-          <button class="header__login link">login</button>
-          <button class="header__btn btn">Sign up</button>
+          <button class="header__login link lh21">login</button>
+          <button class="header__btn btn fsz14-lh18">Sign up</button>
         </div>
         <!-- block media active  -->
         <div class="header__burger burger">
@@ -55,7 +57,64 @@
   </header>
 
   <main>
-  
+    <section class="hero">
+      <div class="hero__inner flex container">
+        <div class="hero__content flex">
+          <h1 class="hero__title accent-font fsz72-lh92">
+            Growing Beautiful Plants at Home
+          </h1>
+          <p class="hero__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec
+            tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum fringilla at.
+          </p>
+          <a href="#" class="hero__btn btn fw500 fsz18-lh23">
+            Learn More
+          </a>
+          <div class="hero__adventage flex">
+            <div class="hero__card card-adv">
+              <div class="card-adv__count accent-font fw700 fsz36-lh49">2000+</div>
+              <div class="card-adv__value fsz18-lh23">Delivery</div>
+            </div>
+            <div class="hero__card card-adv">
+              <div class="card-adv__count accent-font fw700 fsz36-lh49">1200+</div>
+              <div class="card-adv__value fsz18-lh23">Customers</div>
+            </div>
+            <div class="hero__card card-adv">
+              <div class="card-adv__count accent-font fw700 fsz36-lh49">1000+</div>
+              <div class="card-adv__value fsz18-lh23">Product</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__picture">
+          <img src="/img/hero.png" alt="hero">
+        </div>
+      </div>
+    </section>
+    <section class="collection">
+      <div class="collection__inner flex container">
+        <div class="collection__text flex">
+          <h2 class="collection__title accent-font fsz36-lh49">
+            We have lots of plants collection for you and your family
+          </h2>
+          <a class="collection__link fsz18-lh23" href="#" class="collection__link">
+            See all collection
+          </a>
+        </div>
+        <ul class="collection__list flex">
+          <li class="collection__item">
+            <img class="collection__img" src="/img/collect001-b.png" alt="plants">
+          </li>
+          <li class="collection__item">
+            <img class="collection__img" src="/img/collect002-b.png" alt="plants">
+          </li>
+          <li class="collection__item">
+            <img class="collection__img" src="/img/collect003-b.png" alt="plants">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="section-offset"></div>
   </main>
 
   <footer>
@@ -63,4 +122,5 @@
   </footer>
   <script src="js/script.js"></script>
 </body>
+
 </html>
