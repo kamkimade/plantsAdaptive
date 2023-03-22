@@ -1,9 +1,10 @@
 /* Global parameters */
 
 :root {
-  --primaryColor: #066F14;
-  --primaryColor-Light: #359b43;
-  --primaryColor-ExLight: #DFFFE3;
+  --accentColor: #066F14;
+  --accentColor-Light: #359b43;
+  --accentColor-ExLight: #DFFFE3;
+  --primaryColor: #4A4A4A;
   --fontColor-Dark: #1A1A1A;
   --fontColor-Gray: #5A5A5A;
   --fontColor-White: #ECECEC;
@@ -14,6 +15,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  color: var(--primaryColor);
 }
 
 .container {
@@ -25,6 +27,82 @@ body {
 .flex {
   display: flex;
 }
+
+.section-offset {
+  margin-bottom: 128px;
+}
+
+/* Fonts config */
+.accent-font {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  color: var(--fontColor-Dark);
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fsz14-lh18 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.fsz18-lh23 {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.fsz18-lh29 {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.fsz24-lh33 {
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.fsz36-lh49{
+  font-size: 36px;
+  line-height: 49px;
+}
+
+.fsz40-lh50 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.fsz48-lh57 {
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.fsz72-lh92 {
+  font-size: 72px;
+  line-height: 92px;
+}
+
+.lh19 {
+  line-height: 19px;
+}
+
+.lh28 {
+  line-height: 28px;
+}
+
+.lh21 {
+  line-height: 21px;
+}
+/* End Fonts config */
 
 /* Burger selectors */
 .burger {
@@ -105,7 +183,6 @@ body {
 /* End burger */
 .link {
   display: block;
-  line-height: 21px;
   color: var(--fontColor-Dark);
   position: relative;
 }
@@ -117,7 +194,7 @@ body {
   position: absolute;
   bottom: -5px;
   left: 0;
-  background-color: var(--primaryColor);
+  background-color: var(--accentColor);
   opacity: 0;
   transition: opacity .3s ease-in-out;
 }
@@ -127,52 +204,19 @@ body {
 }
 
 .btn {
-  background: var(--primaryColor);
+  background: var(--accentColor);
   border-radius: 4px;
   color: #fff;
   transition: all .3s ease-in-out;
 }
 
 .btn:hover {
-  background-color: var(--primaryColor-Light);
-}
-
-/* fonts config */
-.title {
-  font-family: 'Nunito Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  color: var(--fontColor-Dark);
-}
-
-.title-fsz-big {
-  font-size: 72px;
-  line-height: 92px;
-}
-
-.title-fsz-small {
-  font-size: 40px;
-  line-height: 50px;
-}
-
-.title-fsz-medium {
-  font-size: 48px;
-  line-height: 57px;
-}
-
-.logo {
-  font-size: 24px;
-  line-height: 33px;
+  background-color: var(--accentColor-Light);
 }
 
 
 
 /* HEADER */
-.header {
-  outline: 1px solid green;
-  /* delete */
-}
-
 .header__inner {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -198,4 +242,109 @@ body {
 
 .header__burger {
   margin-left: 30px;
+}
+
+/* Main */
+/* Hero */
+.hero__inner {
+  margin-bottom: 100px;
+  max-height: 719px;
+  align-items: center;
+  position: relative;
+}
+.hero__content {
+  max-width: 548px;
+  flex-direction: column;
+}
+
+.hero__inner::after {
+  content: '';
+  width: 157px;
+  height: 193px;
+  position: absolute;
+  left: 40%;
+  bottom: 15%;
+  background-image: url('/img/hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(20deg);
+  z-index: -1;
+}
+
+.hero__title {
+  margin-bottom: 24px;
+}
+
+.hero__descr {
+  margin-bottom: 40px;
+}
+
+.hero__btn {
+  padding: 16px 0;
+  margin-bottom: 60px;
+  max-width: 160px;
+  text-align: center;
+}
+
+.hero__card:not(:last-child) {
+  margin-right: 112px;
+}
+
+/* Collection */
+.collection__inner {
+  justify-content: space-between;
+
+}
+.collection__text {
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 390px;
+}
+
+.collection__link {
+  max-width: 200px;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #4A4A4A;
+  position: relative;
+}
+.collection__link::after {
+  position: absolute;
+  top: 22%;
+  right: 10px;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-bottom: 2px solid #4A4A4A;
+  border-right: 2px solid #4A4A4A;
+  transform: rotate(-45deg);
+}
+
+.collection__link:hover {
+  background-color: #cbcbcb;
+}
+
+.collection__item {
+  padding: 22px 28px;
+  width: 215px;
+  height: 207px;
+  border-radius: 4px;
+}
+
+.collection__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.collection__item:nth-child(2n-1) {
+  background: #F6EDE8;
+}
+
+.collection__item:nth-child(2n) {
+  background: #F0F1F6;
+}
+
+.collection__img {
+  width: 163px;
+  height: 163px;
 }

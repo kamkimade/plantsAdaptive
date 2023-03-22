@@ -1,4 +1,5 @@
 @media screen and (max-width: 1024px) {
+  .hero__picture,
   nav {
     display: none;
   }
@@ -6,10 +7,105 @@
   .burger {
     display: flex;
   }
+
+  .hero__inner {
+    justify-content: center;
+  }
+
+  .hero__inner::after {
+    left: 72%;
+  }
+
+  .hero__title, .hero__descr {
+    text-align: center;
+  }
+  .hero__btn {
+    align-self: center;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .collection__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .collection__text {
+    margin-bottom: 20px;
+    max-width: 693px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header__autorization {
     display: none;
+  }
+
+  .hero__inner::after {
+    left: 58%;
+  }
+
+  .hero__title {
+    font-size: 48px;
+    line-height: 57px;
+  }
+
+  .card-adv__count {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .hero__adventage {
+    justify-content: space-between;
+  }
+
+  .hero__card:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  .collection__list {
+    flex-direction: column;
+  }
+  .collection__item {
+    width: 430px;
+    height: 414px;
+  }
+  .collection__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .collection__img {
+    width: 326px;
+    height: 326px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__inner {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .hero__inner::after {
+    display: none;
+  }
+  .hero__card:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .hero__title {
+    margin-bottom: 12px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .hero__descr {
+    margin-bottom: 20px;
+  }
+  .collection__item {
+    width: calc(430px / 2);
+    height: calc(414px / 2);
+  }
+  .collection__img {
+    width: calc(326px / 2);
+    height: calc(326px / 2);
   }
 }
