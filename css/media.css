@@ -1,4 +1,7 @@
 @media screen and (max-width: 1024px) {
+  .section-ofsset {
+    margin-bottom: calc(128px * 0.8);
+  }
   .hero__picture,
   nav {
     display: none;
@@ -24,6 +27,8 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  /* Collection */
   .collection__inner {
     flex-direction: column;
     align-items: center;
@@ -31,6 +36,54 @@
   .collection__text {
     margin-bottom: 20px;
     max-width: 693px;
+  }
+
+  /* About */
+  .about__img {
+    margin-right: 15px;
+    width: calc(516px * 0.7);
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .about__wrapper {
+    width: 100%;
+    height: 70%;
+  }
+  
+  .about__wrapper>img {
+    max-width: 70%;
+  }
+  
+  .about__content {
+    max-width: 55%;
+  }
+  
+  .about__title {
+    margin-bottom: calc(12px * 0.6);
+  }
+
+  .about__subtitle {
+    margin-bottom: calc(24px * 0.6);
+    font-size: 24px;
+    line-height: 33px;
+  }
+  
+  .about__text {
+    margin-bottom: calc(16px * 0.6);
+  }
+  
+  .about__descr {
+    margin-bottom: calc(36px * 0.6);
+  }
+
+  /* Product */
+  .product__cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .product__card:not(:last-child) {
+    margin-bottom: 24px;
   }
 }
 
@@ -76,13 +129,46 @@
     width: 326px;
     height: 326px;
   }
+  /* About */
+  .about__inner {
+    justify-content: center;
+  }
+  .about__img {
+    display: none;
+  }
+  .about__content {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__btn {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  /* Product */
+  .product__cards {
+    margin-bottom: 16px;
+  }
+  .product__card:last-child {
+    margin-bottom: 24px;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .section-offset {
+    margin-bottom: calc(128px * 0.5);
+  }
   .header__inner {
     margin-bottom: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  /* Hero */
+  .hero__inner {
+    margin-bottom: 70px;
   }
   .hero__inner::after {
     display: none;
@@ -100,12 +186,22 @@
   .hero__descr {
     margin-bottom: 20px;
   }
+
+  /* Collection */
   .collection__item {
-    width: calc(430px / 2);
-    height: calc(414px / 2);
+    width: calc(430px * 0.7);
+    height: calc(414px * 0.7);
   }
   .collection__img {
-    width: calc(326px / 2);
-    height: calc(326px / 2);
+    width: calc(326px * 0.7);
+    height: calc(326px * 0.7);
+  }
+  .collection__title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  /* About */
+  .about__subtitle {
+    text-align: center;
   }
 }

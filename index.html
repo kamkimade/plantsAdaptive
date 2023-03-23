@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <div class="burger-menu"></div>
   <header class="header">
     <div class="header__inner flex container">
       <a href="#" class="accent-font fw700 fsz24-lh33">Plant</a>
@@ -29,7 +30,7 @@
             <a href="#" class="nav__link link lh21">Services</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link link lh21">About Us</a>
+            <a href="#about" class="nav__link link lh21">About Us</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link link lh21">Blog</a>
@@ -44,18 +45,16 @@
           <button class="header__login link lh21">login</button>
           <button class="header__btn btn fsz14-lh18">Sign up</button>
         </div>
-        <!-- block media active  -->
+        <!-- block burger icon active  -->
         <div class="header__burger burger">
           <div class="burger-line burger-top"></div>
           <div class="burger-line burger-center"></div>
           <div class="burger-line burger-bottom"></div>
         </div>
-        <div class="burger-menu"></div>
         <!-- endblock -->
       </div>
     </div>
   </header>
-
   <main>
     <section class="hero">
       <div class="hero__inner flex container">
@@ -92,12 +91,12 @@
       </div>
     </section>
     <section class="collection">
-      <div class="collection__inner flex container">
+      <div class="collection__inner section-offset flex container">
         <div class="collection__text flex">
           <h2 class="collection__title accent-font fsz36-lh49">
             We have lots of plants collection for you and your family
           </h2>
-          <a class="collection__link fsz18-lh23" href="#" class="collection__link">
+          <a class="collection__link fsz18-lh23" href="#">
             See all collection
           </a>
         </div>
@@ -114,7 +113,268 @@
         </ul>
       </div>
     </section>
-    <div class="section-offset"></div>
+    <section class="about" id="about">
+      <div class="about__inner section-offset flex container">
+        <div class="about__img flex">
+          <div class="about__wrapper flex">
+            <img src="/img/about001.jpg" alt="plant">
+          </div>
+        </div>
+        <div class="about__content">
+          <h2 class="about__title fsz18-lh23 fw500">
+            About Us
+          </h2>
+          <h3 class="about__subtitle accent-font fsz40-lh50">
+            Continue to Develop to Became Global Company
+          </h3>
+          <p class="about__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec
+            tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum fringilla at. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec tristique at in erat
+            lectus mas sa diam. Lectus elit, nulla elementum fringilla at.
+          </p>
+          <p class="about__descr fsz18-lh29 fw500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus.
+          </p>
+          <a href="#" class="about__btn btn fw500 fsz18-lh23">
+            Read More
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="product__inner section-offset container flex">
+        <div class="product__wrapper">
+          <h2 class="product__title accent-font fsz40-lh50">
+            Our Best Product
+          </h2>
+          <ul class="product__list flex">
+            <li class="product__item">
+              <a href="" class="product__link lh21 fw500">
+                New Plants
+              </a>
+            </li>
+            <li class="product__item">
+              <a href="" class="product__link lh21 fw500">
+                New Arrivals
+              </a>
+            </li>
+            <li class="product__item">
+              <a href="" class="product__link lh21 fw500">
+                Sale
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="product__cards flex">
+          <li class="product__card">
+
+            <aside class="card-product">
+              <img src="/img/cardProduct01.png" alt="plant" class="card-product__img">
+              <div class="card-product__content">
+                <div class="card-product__name accent-font fsz24-lh33 lh28 fw600">
+                  Outdoor Plant
+                </div>
+                <div class="card-product__rating">
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>              
+                </div>
+                <div class="card-product__price accent-font lh19 fw600">
+                  $50.00
+                </div>
+              </div>
+            </aside>
+
+          </li>
+          <li class="product__card">
+            <aside class="card-product">
+              <img src="/img/cardProduct02.png" alt="plant" class="card-product__img">
+              <div class="card-product__content">
+                <div class="card-product__name accent-font fsz24-lh33 lh28 fw600">
+                  Outdoor Plant
+                </div>
+                <div class="card-product__rating">
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>              
+                </div>
+                <div class="card-product__price accent-font lh19 fw600">
+                  $50.00
+                </div>
+              </div>
+            </aside>
+          </li>
+          <li class="product__card">
+            <aside class="card-product">
+              <img src="/img/cardProduct03.png" alt="plant" class="card-product__img">
+              <div class="card-product__content">
+                <div class="card-product__name accent-font fsz24-lh33 lh28 fw600">
+                  Outdoor Plant
+                </div>
+                <div class="card-product__rating">
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>              
+                </div>
+                <div class="card-product__price accent-font lh19 fw600">
+                  $50.00
+                </div>
+              </div>
+            </aside>
+          </li>
+          <li class="product__card">
+            <aside class="card-product">
+              <img src="/img/cardProduct04.png" alt="plant" class="card-product__img">
+              <div class="card-product__content">
+                <div class="card-product__name accent-font fsz24-lh33 lh28 fw600">
+                  Outdoor Plant
+                </div>
+                <div class="card-product__rating">
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>
+                  <div class="card-product__star-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.00002 12.1735L3.29802 14.8055L4.34802 9.52016L0.391357 5.8615L5.74269 5.22683L8.00002 0.333496L10.2574 5.22683L15.6087 5.8615L11.652 9.52016L12.702 14.8055L8.00002 12.1735Z"
+                        fill="#F4C300" /> 
+                    </svg>
+                  </div>              
+                </div>
+                <div class="card-product__price accent-font lh19 fw600">
+                  $50.00
+                </div>
+              </div>
+            </aside>
+          </li>
+        </ul>
+        <button class="product__btn btn">
+          View All
+        </button>
+      </div>
+    </section>
   </main>
 
   <footer>

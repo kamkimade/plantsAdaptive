@@ -18,6 +18,14 @@ for (let i=0; i<navLinks.length; i++) {
 }
 
 burgerBtn.addEventListener('click', startBurger);
+navList.forEach((link) => {
+  link.addEventListener('click', () => {
+    burgerMenu.classList.remove('burger-menu--active');
+    removeChildrenElem(burgerMenu, navList)
+    burgerBtnToggle()
+  } )
+})
+
 
 function startBurger() {
   burgerBtnToggle();
@@ -25,13 +33,7 @@ function startBurger() {
     burgerMenu.classList.remove('burger-menu--active');
     removeChildrenElem(burgerMenu, navList);
   } else {
-    navList.forEach((link) => {
-      link.addEventListener('click', () => {
-        burgerMenu.classList.remove('burger-menu--active');
-        removeChildrenElem(burgerMenu, navList)
-        burgerBtnToggle()
-      } )
-    })
+
     burgerMenu.classList.add('burger-menu--active');
     addChildrenElem(burgerMenu,navList); 
   }
