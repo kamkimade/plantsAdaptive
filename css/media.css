@@ -107,6 +107,9 @@
     margin-left: 15px;
     margin-right: 15px;
   }
+  .footer__info {
+    max-width: 200px;
+  }
 
 }
 
@@ -221,6 +224,19 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  /* Footer */
+  .footer__inner {
+    height: auto;
+    flex-direction: column;
+  }
+  .footer__info {
+    margin-bottom: 20px;
+    max-width: 306px;
+  }
+  .footer__navigation{
+    width: 100%;
+    align-self: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -296,5 +312,9 @@
   /* Instagram */
   .instagram__wrapper {
     flex-direction: column;
+  }
+  /* footer */
+  .footer-nav{
+    display: none;
   }
 }
