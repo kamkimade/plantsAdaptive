@@ -107,6 +107,7 @@
     margin-left: 15px;
     margin-right: 15px;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -213,6 +214,13 @@
     bottom: 0;
     right: 2%;
   }
+
+  /* Instagram */
+  .instagram__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -284,5 +292,9 @@
     margin-bottom: 15px;
     max-width: 320px;
     align-self: center;
+  }
+  /* Instagram */
+  .instagram__wrapper {
+    flex-direction: column;
   }
 }
