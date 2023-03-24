@@ -85,6 +85,23 @@
   .product__card:not(:last-child) {
     margin-bottom: 24px;
   }
+
+  /* Preview */
+  .review__inner {
+    justify-content: center;
+  }
+
+  .review__left {
+    max-width: 600px;
+    margin-right: 0;
+  }
+
+  .review__title {
+    text-align: center;
+  }
+  .review__img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -154,6 +171,15 @@
   .product__card:last-child {
     margin-bottom: 24px;
   }
+    /* Preview */
+  .slider {
+    max-width: 450px;
+  }
+  .review__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -203,5 +229,10 @@
   /* About */
   .about__subtitle {
     text-align: center;
+  }
+
+  /* Preview */
+  .slider {
+    max-width: 290px;
   }
 }

@@ -463,7 +463,6 @@ body {
   padding: 10px 30px 30px;
   display: flex;
   flex-direction: column;
-
 }
 
 .card-product__img {
@@ -486,3 +485,99 @@ body {
   margin-right: 4px;
 }
 
+/* Review */
+.review__left {
+  margin-right: 15px;
+  max-width: 500px;
+}
+
+.review__head {
+  margin-bottom: 43px;
+}
+
+.review__title {
+  margin-bottom: 12px;
+}
+
+.review__img {
+  max-width: 600px;
+  z-index: -1;
+}
+
+.slider {
+  width: 600px;
+  position: relative;
+}
+
+.slider__arrows {
+  width: 48px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.slider__arrow {
+  padding: 0 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.slider__arrow-left {
+  background-color: #143B19;
+}
+
+.slider__arrow-right {
+  background-color: #fff;
+}
+
+.slider__icon {
+  width: 12px;
+}
+
+.card-review {
+  padding: 20px 60px 30px 30px;
+
+  background-color: var(--accentColor);
+  position: relative;
+}
+
+.card-review::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-image: url('/img/Vector.svg');
+}
+
+.card-review__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.card-review__wrapper>img {
+  margin-right: 10px;
+}
+
+.card-review__title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.card-review__subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  color: #D9D9D9;
+}
+
+.card-review__comment {
+  color: #fff;
+}
