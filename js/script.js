@@ -20,6 +20,7 @@ for (let i=0; i<navLinks.length; i++) {
 burgerBtn.addEventListener('click', startBurger);
 navList.forEach((link) => {
   link.addEventListener('click', () => {
+    document.body.classList.remove('no-scroll');
     burgerMenu.classList.remove('burger-menu--active');
     removeChildrenElem(burgerMenu, navList)
     burgerBtnToggle()
@@ -30,10 +31,11 @@ navList.forEach((link) => {
 function startBurger() {
   burgerBtnToggle();
   if (burgerMenu.className.includes('burger-menu--active')) {
+    document.body.classList.remove('no-scroll');
     burgerMenu.classList.remove('burger-menu--active');
     removeChildrenElem(burgerMenu, navList);
   } else {
-
+    document.body.classList.add('no-scroll');
     burgerMenu.classList.add('burger-menu--active');
     addChildrenElem(burgerMenu,navList); 
   }
